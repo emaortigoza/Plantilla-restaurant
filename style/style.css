@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    
+    background-image: url(../img/fondo2.jpg);
+}
+
+.hero__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.hero__header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.header__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header__right p{
+    font-family: 'Lato', sans-serif;
+}
+
+.header__right .menu{
+    list-style: none;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #F2CB05;
+    font-style: italic;
+    gap: 2rem;
+    letter-spacing: 2px;  
+    
+}
+.header__right .menu a{
+    text-decoration: none;
+    color: #8C0468;
+}
+
+.hero__main{
+    display: flex;
+   padding: 2px;
+}
+
+.hero__main > div{
+    flex: 1;
+}
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.hero__text h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 2px dashed #730202;
+    width: max-content;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+.hero__text h2{
+    color: #730202;
+    font-family: 'Alfa Slab One', cursiva;;
+    font-size: 5rem;
+    text-shadow: 4px 4px 0 whitesmoke;
+}
+
+.hero__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+
+}
+.hero__img img{
+    max-width: 800px;
+    
+}
+
+
+/*** GRID ***/
+
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-column: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+}
+
+.grid__item{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+}
+.grid__item h5,
+.grid__item h4{
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.grid__item h5{
+    font-size: 1.2rem;
+}
+.grid__item h4{
+    font-size: 1.6rem;
+}
+
+.grid__item1{
+    grid-area: item1;
+    background-image: url("../img/gridTacos.jpg");
+    height: 400px;
+}
+
+.grid__item2{
+    grid-area: item2;
+    background-image: url("../img/gridNachos.jpg");
+}
+.grid__item3{
+    grid-area: item3;
+    background-image: url("../img/gridEnchilada.jpg");
+}
+
+
+/*****Enjoy****/
+
+.enjoy{
+    padding: 6rem;
+    padding-top: 0;
+}
+.titles{
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titles h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: #F2CB05;
+    padding: .5rem 1rem .25rem 1rem;
+}
+
+.titles h2{
+    font-family: 'Alfa Slab One', cursiva;;
+    font-size: 3rem;
+}
+.titles p{
+    font-family: 'Lato', sans-serif;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;  
+    gap: 1rem;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+/***NOsotros***/
+
+.nosotros{
+    padding: 6rem;
+    padding-top: 0;
+  
+   
+}
+
+.inner{
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 40px #aaaaaa;  
+}
+
+.inner__left{
+    padding: 2rem;
+}
+
+.inner__left h5{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #8C0468;
+    letter-spacing: 1px;
+}
+
+.inner__left h3{
+    font-family: 'Alfa Slab One', cursiva;;
+    font-size: 2rem;
+}
+
+.inner__left p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #8f7e2b;
+}
+.inner__left,
+.inner__right{
+    flex: 1;
+    min-width: 0;
+}
+
+.inner__right img{
+    max-width: 100%;
+}
