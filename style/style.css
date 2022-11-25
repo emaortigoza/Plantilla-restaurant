@@ -37,9 +37,9 @@
     list-style: none;
     display: flex;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #F2CB05;
-    font-style: italic;
+    
     gap: 2rem;
     letter-spacing: 2px;  
     
@@ -232,4 +232,273 @@
 
 .inner__right img{
     max-width: 100%;
+}
+
+
+/***Reservas/contacto**/
+/**form**/
+
+.reservas{
+    padding: 6rem;
+    padding-top: 0;
+    display: flex ;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: 
+    url(../img/many-drinks-1.webp),
+    url(../img/nachos-image-1.png);
+    background-size:
+        400px,
+        400px;
+    background-position: 
+        -5px center,
+        900px center;
+}
+
+.reserva__header{
+    text-align: center;
+}
+
+.reserva__header h5{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.reserva__header h4{
+    font-family: 'Alfa Slab One', cursiva;
+    font-size: 2rem;
+}
+
+.reserva__formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "name email"
+        "date time"
+        "people button";
+    width: 40rem;
+    justify-content: center;
+    gap: 1rem;
+    
+    
+}
+
+.reserva__formulario input{
+    padding: .75rem 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+}
+
+.reserva__formulario .name{
+    grid-area: name;
+}
+.reserva__formulario .email{
+    grid-area: email;
+}
+.reserva__formulario .date{
+    grid-area: date;
+}
+.reserva__formulario .time{
+    grid-area: time;
+}
+.reserva__formulario .people{
+    grid-area: people;
+}
+.reserva__formulario .button{
+    grid-area: button;
+    border: 0;
+    background-color: #730202;
+    font-family: 'Alfa Slab One', cursiva;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/***footer***/
+footer{
+    padding: 6rem;
+    padding-top: 0;
+    color: whitesmoke;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/gridEnchilada.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    position: relative;
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    z-index: inherit;
+}
+
+.footer__top,
+.footer__button{
+    z-index: 1;
+}
+
+.footer__top{
+    display: flex;
+    padding-block: 3rem;
+}
+.footer__top > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer__top h2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+}
+.footer__top p{
+    font-family: 'Lato', sans-serif;
+}
+
+.adress{
+    align-items: flex-end;
+}
+.adress p{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer__button{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+.footer__button p{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer__button .icons{
+    display: flex;
+    gap: .75rem;
+}
+
+
+@media screen and (max-width:768px) {
+  
+    .hero__header{
+        flex-direction: column;
+        gap: 2rem;
+        padding-inline: 2rem;
+    }
+    .header__right{
+        align-items: flex-start;
+        font-size: 1.4rem;
+    }
+
+    .hero__img{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .hero__main{
+        padding-inline: 1rem;
+        padding-top: 2rem;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .grid__item{
+        flex: 1;
+    }
+    .grid__item1{
+        padding-bottom: 6rem;
+    }
+
+    .enjoy{
+        padding-inline: 2rem;
+    }
+    .title{
+        padding: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+    .nosotros{
+        padding: 2rem;
+    }
+    .nosotros .inner{
+        flex-direction: column;
+    }
+    .nosotros .inner__right{
+        order: -1;
+    }
+    .reservas{
+        padding: 2rem;
+        background-image: none;
+    }
+    .reserva__formulario{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 2rem;
+    }
+
+.footer__top{
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+}
+.adress{
+    align-items: flex-start;
+}
+.footer__button{
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer__button .icons{
+    order: -1;
+}
+
+}
+@media screen and (max-width: 480px) {
+    .hero__header{
+        flex-direction: column;
+        gap: 2rem;
+        padding-inline: 2rem;
+    }
+    .header__right{
+        align-items: flex-start;
+        font-size: 1.4rem;
+    }
+
+    .hero__img{
+        max-width: 100%;
+        padding-top: 0;
+    }
+    .hero__main{
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-top: 2rem;
+    }
 }
